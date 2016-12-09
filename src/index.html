@@ -1,0 +1,106 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Project Janus</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="library/video-js/video-js.css" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+  </style>
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="library/video-js/video.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project Janus</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>HTML5 Video</h2>
+        <hr>
+        <p>Janus Controller</p>
+        <p>
+          <a class="btn btn-success janus_start" href="#" role="button">Start</a>
+          <a class="btn btn-danger janus_stop" href="#" role="button">Stop</a>
+          <a class="btn btn-warning janus_switch" href="#" role="button">Switch</a>
+        </p>
+        <hr>
+        <p>Videos</p>
+        <div class="video_wrapper">
+          <video id="video_src_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup="{}">
+            <source src="https://s3-eu-west-1.amazonaws.com/pixel-drip/sites/janus/left.output.mp4" type='video/mp4' />
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+          </video>
+        </div>
+        <div class="video_wrapper">
+          <video id="video_src_2" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup="{}">
+            <source src="https://s3-eu-west-1.amazonaws.com/pixel-drip/sites/janus/right.output.mp4" type='video/mp4' />
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+          </video>
+        </div>
+        <p style="padding-top: 300px;">
+          <a class="btn btn-success video_start" href="#" role="button" data-source="video_src_2">Start</a>
+          <a class="btn btn-danger video_stop" href="#" role="button" data-source="video_src_2">Stop</a>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <h2>Audio API</h2>
+        <p>Switch Audio Channel</p>
+        <p>
+          <a class="btn btn-default audio_left" href="#" role="button">Left Channel</a>
+          <a class="btn btn-default audio_right" href="#" role="button">Right Channel</a>
+          <a class="btn btn-default audio_stereo" href="#" role="button">Stereo</a>
+          <a class="btn btn-success audio_start" href="#" role="button">Start</a>
+          <a class="btn btn-danger audio_stop" href="#" role="button">Stop</a>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p>&copy; Pixel Ventures Ltd. 2016</p>
+    </footer>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')
+  </script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/video-main.js"></script>
+</body>
+
+</html>

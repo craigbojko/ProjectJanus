@@ -1,0 +1,26 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.video_wrapper{
+	position: absolute;
+  width: auto;
+  height: auto;
+  border: none;
+  z-index: 0;
+}
+
+.video_wrapper.active{
+	/* border: solid 3px #F00; */
+  z-index: 1;
+}
+
+
+.vjs-fade-in,.vjs-fade-out {
+	visibility: visible !important;
+	opacity: 1 !important;
+	transition-duration: 0s!important;
+}
+
